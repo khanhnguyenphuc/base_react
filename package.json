@@ -7,10 +7,17 @@
     "treehouse_profile": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "watchify": "^3.7.0",
+    "babel-preset-react": "^6.11.1"
   },
   "scripts": {
-    "start": "browserify -t [ babelify ] main.js -o bundle.js"
+    "start": "browserify -t [ babelify ] main.js -o bundle.js",
+    "watch-js": "watchify main.js -t babelify -o bundle.js"
   },
   "author": "",
   "license": "ISC"
