@@ -1,0 +1,17 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "dependencies": {
+    "treehouse_profile": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "start": "browserify -t [ babelify ] main.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
